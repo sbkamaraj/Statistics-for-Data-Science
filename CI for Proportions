@@ -1,0 +1,237 @@
+ 
+
+
+
+1.      
+The
+Java computer language, developed by Sun Microsystems, has the advantage that
+its programs can run on types of hardware ranging from mainframe computers all
+the way down to handheld computing devices or even smart phones. A test of 100
+randomly selected programmers revealed that 71 preferred Java to their other
+most used computer languages. Construct a 95% confidence interval for the
+proportion of all programmers in the population from which the sample was
+selected who prefer Java.
+
+
+
+Ans) 
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+
+ 
+ = 
+ 
+ = 71/100 = 0.71
+
+
+
+        
+ 
+ ± Z
+ 
+ =  0.71 ±
+1.96
+ 
+
+
+
+
+        => (0.71-1.96*0.045, 0.71+1.96*0.045)= (0.6218,0.798)
+
+
+
+ 
+
+
+
+ 
+
+
+
+2.      
+A
+small British computer-game firm, Eidos Interactive PLC, stunned the U.S.- and
+Japan-dominated market for computer games when it introduced Lara Croft, an
+Indiana Jones-like adventuress. The successful product took two years to
+develop. One problem was whether Lara should have a swinging ponytail, which
+was decided after taking a poll. If in a random sample of 200 computer-game
+enthusiasts, 161 thought she should have a swinging ponytail (a computer
+programmer’s nightmare todesign), construct a 95% confidence interval for the
+proportion of enthusiasts who would like here to have a swinging ponytail, in
+this market. If the decision to incur the high additional programming cost was
+to be made if p>0.90, was the right decision made (when Eidos went
+ahead with the ponytail)?
+
+
+
+Ans)               
+ 
+ = 
+ 
+ = 0.8
+
+
+
+                        
+ 
+ ± Z
+ 
+ =  0.8 ±
+1.96
+ 
+
+
+
+
+                        (0.8 -1.96*0.02, 0.8+1.96*0.02)= (0.7608,0.8392)
+
+
+
+But the CI is in (0.7608,0.8392)
+
+
+
+Therefore, the decision to go
+ahead to have the ponytail is right.
+
+
+
+ 
+
+
+
+ 
+
+
+
+3.      
+According
+to a survey published in the Financial Times, 56% of executives at
+Britain’s top 500 companies are less willing than they had been five years ago
+to sacrifice their family lifestyle for their career. If the survey consisted
+of a random sample of 40 executives, give a 95% confidence interval for the
+proportion of executives less willing to sacrifice their family lifestyle.
+
+
+
+Ans)               56% of 40 executives= 22
+
+
+
+                                        
+ 
+ = 
+ 
+ =0.55
+
+
+
+
+ 
+ ± Z
+ 
+ =  0.55 ±
+1.96
+ 
+
+
+
+
+                        (0.55 -1.96*0.078, 0.55+1.96*0.078)=
+(0.396,0.704)
+
+
+
+ 
+
+
+
+4.      
+A
+survey of 5,250 business travelers worldwide conducted by OAG Business Travel
+Lifestyle indicated that 91% of business travelers consider legroom the most
+important in-flight feature. (Angle of seat recline and food service were
+second and third, respectively.) Give a 95% confidence interval for the
+proportion of all business travelers who consider legroom the most important
+feature.
+
+
+
+Ans)               91% of 5250 is 4777.5
+
+
+
+
+ 
+ = 
+ 
+ =0.91
+
+
+
+
+ 
+ ± Z
+ 
+ =  0.91 ±
+1.96
+ 
+
+
+
+
+                        (0.91-1.96*0.0039, 0.91+1.96*0.0039)= (0.9023,0.9177)
+
+
+
+5.      
+According
+to Money, 60% of men have significant balding by age 50.24 If this
+finding is based on a random sample of 1,000 men of age 50, give a 95% confidence
+interval for the proportion of men of 50 who show some balding.
+
+
+
+Ans)               60% of 1000 is 600
+
+
+
+
+ 
+ = 
+ 
+ =0.6
+
+
+
+
+ 
+ ± Z
+ 
+ =  0.6 ±
+1.96
+ 
+
+
+
+
+                        (0.6- 0.03, 0.6+0.03)= (0.57,0.63)
+
+
+
+ 
