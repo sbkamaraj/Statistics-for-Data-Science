@@ -1,0 +1,79 @@
+Topics: Normal distribution, Functions of Random Variables
+
+	The time required for servicing transmissions is normally distributed with  = 45 minutes and  = 8 minutes. The service manager plans to have work begin on the transmission of a customer’s car 10 minutes after the car is dropped off and the customer is told that the car will be ready within 1 hour from drop-off. What is the probability that the service manager cannot meet his commitment? 
+
+	0.3875   
+	0.2676   
+	0.5   
+	0.6987 
+Ans)	B
+let  time  taken for service transmission= T
+	T is normally distributed with   = 45 minutes and standard deviation  = 8 minutes.
+	Time delay= 10 minutes
+Time available to finish the work= 60-10=50 minutes.
+	Therefore from the equation Z=(T-µ)/ 
+	P(T≤50)=p(Z≤(50-45)/8)=p(Z≤0.625)= 0.7324(using z table)
+	Therefore  p(T>50)=1-p(≤50)= 1-0.7324= 0.2676
+	(Or) 
+	Using R-function : [1-pnorm(50,45,8)]= 
+
+> 1-pnorm(50,45,8)
+[1] 0.2659855
+
+
+
+
+	The current age (in years) of 400 clerical employees at an insurance claims processing center is normally distributed with mean  = 38 and Standard deviation  =6. For each statement below, please specify True/False. If false, briefly explain why.
+	More employees at the processing center are older than 44 than between 38 and 44.
+Ans)	False.
+• 68% of the data falls within one standard deviation of the mean (µ+). 
+ Here µ=38,  =6
+Then, µ+= 38+6=44
+	A training program for employees under the age of 30 at the center would be expected to attract about 36 employees.
+Ans)	True
+		Z=(X-µ)/ 
+	P(X≤30)=p(Z≤(30-38)/6)=p(Z≤-1.33)= 0.0918(using z table)
+	Expected count=0.0918*400= 36.72
+	
+	If X1~ N(μ, σ2) and X2 ~ N(μ, σ2) are iidnormal random variables, then what is the difference between 2 X1 and X1 + X2? Discuss both their distributions and parameters.    
+Ans)	2 X_1 is simply a larger scale version of the random variable X1. If  X_1  is normally distributed then 2X1 is also normally distributed. 
+X1 and X2 are  normal distributed, the associated sums and random samples are exactly (and not just approximately) normal, with the appropriate parameters.   
+
+	Let X ~ N(100, 202). Find two values, a and b, symmetric about the mean, such that the probability of the random variable taking a value between them is 0.99. 
+
+	90.5, 105.9 
+	80.2, 119.8 
+	22, 78 
+	48.5, 151.5 
+	90.1, 109.9
+Ans)	D
+	Here we need range of 99% data which lies between 3rd standard deviation of the mean.
+	Here µ=100,  =20	
+From empirical rule, µ±3= 100±3*20=>(100-60, 100+60)=>(40,160).
+
+	Consider a company that has two different divisions. The annual profits from the two divisions are independent and have distributions Profit1 ~ N(5, 32) and Profit2 ~ N(7, 42) respectively. Both the profits are in $ Million. Answer the following questions about the total profit of the company in Rupees. Assume that $1 = Rs. 45
+	Specify a Rupee range (centered on the mean) such that it contains 95% probability for the annual profit of the company.	
+	Specify the 5th percentile of profit (in Rupees) for the company
+	Which of the two divisions has a larger probability of making a loss in a given year?
+Ans)	let, X is the sum of two random variables having normal distribution. 
+	E[X]= E[45*(profit 1+profit 2)]= 45*(5+7)=540 million rupees
+	SD[X]= SD[profit 1 +profit 2]=> 45*(√(var(profit1)+var(profit2))) 
+= 45*√(9+16)= 225 million rupees.
+Therefore, X~ N(540,〖225〗^2)
+	From the empirical rule, Approximately 95% of the data falls within two standard deviation of the mean.
+μ ± 2σ = 540±2*225=> (540-450, 540+450)=> (90,990)
+B)
+ 
+From the above normal distribution we can say that to find 5th percentile from the left side we can use the formula,
+μ - 1.5σ  => 540-(1.5*225) =>202.5 million rupees.
+c)	this question concerns the original profit distributions.
+	For division1= Z score for a profit of zero: Z=(X-µ)/  =>  (0-5)/3 => -1.66=0.0485
+(or)
+> pnorm(0,5,3)
+[1] 0.04779035
+
+	For division2= Z score for a profit of zero: Z=(X-µ)/   =(0-7)/4 => -1.75= .0401
+> pnorm(0,7,4)
+[1] 0.04005916
+
+	Division2 has a higher probability of making a loss.
